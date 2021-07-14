@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .main{
+            display:inline-block;
+            width: 100%;
+            padding:0px;
+            margin:0;
+        }
+        .cuadro{
+            display:inline-block;
+            box-sizing: border-box;
+            border:0px solid red;
+            width: calc(50% - 22px);
+            height: calc((50vw - 22px) * 0.65);
+            margin:10px;
+        }
+        .bandera{
+            display:inline-block;
+            box-sizing: border-box;
+            border:1px solid gray;
+            width: 100%;
+            height: calc((50vw - 22px) * 0.5625);
+            margin:0px;
+        }
+        .esp{
+            background-color: red;
+            z-index: -2;
+            position: relative;
+        }
+        .esp2{
+            background-color: yellow;
+            width: 100%;
+            height: calc((50vw - 22px) * 0.28);
+            z-index: -1;
+            position: absolute;
+            top: calc((50vw - 22px) * 0.14);
+        
+        }
+        .din{
+            background-color: red;
+            z-index: -2;
+            position:relative;
+        }
+        .din2{
+            background-color: white;
+            z-index: -1;
+            height: 100%;
+            width: 6%;
+            position: absolute;
+            left: calc((50vw - 22px) * 0.25);
+        }
+        .din3{
+            background-color: white;
+            z-index: 0;
+            height: calc((50vw - 22px) * 0.06);
+            width:100%;
+            position: absolute;
+            top: calc((50vw - 22px) * 0.25);
+        }
+        .eau{
+            background-color: red;
+            z-index: -2;
+            position: relative;
+        }
+        .eau2{
+            background-color: green;
+            z-index: -1;
+            width:78%;
+            height: calc((50vw - 22px) * 0.19);
+            position: absolute;
+            top: 0;
+            right:0;
+        }
+        .eau3{
+            background-color: white;
+            z-index: -1;
+            width:78%;
+            height: calc((50vw - 22px) * 0.19);
+            position: absolute;
+            top: calc((50vw - 22px) * 0.19);
+            right:0;
+        }
+        .eau4{
+            background-color: black;
+            z-index: -1;
+            width:78%;
+            height: calc((50vw - 22px) * 0.19);
+            position: absolute;
+            top: calc((50vw - 22px) * 0.37);
+            right:0;
+        }
+        .jap{
+            background-color: white;
+            z-index: -2;
+            position: relative;
+        }
+        .jap2{
+            background-color: red;
+            z-index: -1;
+            width:30%;
+            height: calc((50vw - 22px) * 0.30);
+            border-radius: 90px;
+            position: absolute;
+            right:calc((50vw - 22px) * 0.35);
+            top:calc((50vw - 22px) * 0.13);            
+        }
+        p{
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="cuadro">
+            <div class="bandera esp">
+                <div class="esp2"></div>
+            </div>
+            <p>España</p>
+        </div>
+        <div class="cuadro">
+            <div class="bandera din">
+                <div class="din2"></div>
+                <div class="din3"></div>
+            </div>
+            <p>Dinamarca</p>
+        </div>        
+        <div class="cuadro">
+            <div class="bandera eau">
+                <div class="eau2"></div>
+                <div class="eau3"></div>
+                <div class="eau4"></div>
+            </div>
+            <p>Emiratos Árabes</p>
+        </div>        
+        <div class="cuadro">
+            <div class="bandera jap">
+                <div class="jap2"></div>
+            </div>
+            <p>Japón</p>
+        </div>
+    </div>   
+</body>
+</html>
